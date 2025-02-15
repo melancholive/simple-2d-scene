@@ -1,3 +1,13 @@
+/**
+* Author: Si Yue Jiang
+* Assignment: Simple 2D Scene
+* Date due: 2025-02-15, 11:59pm
+* I pledge that I have completed this assignment without
+* collaborating with anyone else, in conformance with the
+* NYU School of Engineering Policies and Procedures on
+* Academic Misconduct.
+**/
+
 #define GL_SILENCE_DEPRECATION
 #define STB_IMAGE_IMPLEMENTATION
 #define LOG(argument) std::cout << argument << '\n'
@@ -177,15 +187,14 @@ void update()
     g_milky_way_matrix    = glm::mat4(1.0f);
     g_star_jelly_matrix = glm::mat4(1.0f);
     
+    /* Transformations - translate -> rotate -> scale */
+    
     // translate the star jelly in an eliptical orbit relative to the position of milky way
     g_star_jelly_matrix = glm::translate(g_star_jelly_matrix, g_position_two + g_position);
     g_star_jelly_matrix = glm::scale(g_star_jelly_matrix, init_star_jelly_scale - cos(g_frames/60));
     
-    /* Transformations - translate -> rotate -> scale */
     g_milky_way_matrix = glm::translate(g_milky_way_matrix, g_position_two);
-    g_milky_way_matrix = glm::rotate(g_milky_way_matrix,                 // rotating in respect to milky way
-                                 g_rotation_milky_way.y,            // by the accumulated amt in the y-axis
-                                 glm::vec3(0.0f, 1.0f, 0.0f)); // just in the y-axis
+    g_milky_way_matrix = glm::rotate(g_milky_way_matrix,g_rotation_milky_way.y,glm::vec3(0.0f, 1.0f, 0.0f));
 }
 
 
