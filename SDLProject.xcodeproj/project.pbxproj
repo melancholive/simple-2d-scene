@@ -43,8 +43,8 @@
 		DBDF1B662323DEEA007CECB1 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		DBDF1B672323DEEA007CECB1 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		DBDF1B682323DEEA007CECB1 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
-		E441241C2D6133F6000C4271 /* milky-way-cookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milky-way-cookie.png"; sourceTree = "<group>"; };
-		E441241D2D6133F6000C4271 /* star-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-jelly.png"; sourceTree = "<group>"; };
+		E44124222D615953000C4271 /* milky-way-cookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milky-way-cookie.png"; sourceTree = "<group>"; };
+		E44124232D615953000C4271 /* star-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-jelly.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,8 @@
 				DBDF1B5C2323DE8D007CECB1 /* shaders */,
 				DBDF1B5A2323DE8D007CECB1 /* stb_image.h */,
 				DBDF1B522323DE3F007CECB1 /* main.cpp */,
-				E441241C2D6133F6000C4271 /* milky-way-cookie.png */,
-				E441241D2D6133F6000C4271 /* star-jelly.png */,
+				E44124222D615953000C4271 /* milky-way-cookie.png */,
+				E44124232D615953000C4271 /* star-jelly.png */,
 			);
 			path = SDLProject;
 			sourceTree = "<group>";

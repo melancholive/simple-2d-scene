@@ -171,7 +171,7 @@ void update()
     g_position_two.y = cos(g_frames/30) - sin(g_frames/60);
 
     // milky way points towards the star jelly (if the orbit syncs properly)
-    g_rotation_milky_way.y += (cos(g_frames/45)+1) * delta_time * 1.5;
+    g_rotation_milky_way.y += (cos(g_frames/30)+1) * delta_time * 1.5;
 
     /* Model matrix reset */
     g_milky_way_matrix    = glm::mat4(1.0f);
